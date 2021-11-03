@@ -15,7 +15,6 @@ int solution(vector<int> priorities, int location) {
     }
     
     while(!q.empty()){
-        bool flag = false;
         pair<int, int> f = q.front();
         q.pop();
         
