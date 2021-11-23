@@ -5,9 +5,6 @@ using namespace std;
 int solution(string s) {
     int answer = s.size();
     
-    // 맨 앞 문자가 없는 경우 반복될 수가 없으므로 문자열 길이가 가장 짧은 길이
-    if(s.substr(1).find(s[0]) == string::npos) return answer; 
-    
     for(int i=1; i<=s.size()/2; i++){ // 반복 글자 길이
         string check = "";
         string res = "";
