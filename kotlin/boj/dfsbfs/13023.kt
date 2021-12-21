@@ -8,19 +8,19 @@ import java.util.*
 
 var levelChecker: Boolean = false
 
-fun dfs(nodes: ArrayList<ArrayList<Int>>,cnt: Int, pos: Int, visited: BooleanArray){
-    if(cnt == 5){
+fun dfs(nodes: ArrayList<ArrayList<Int>>,level: Int, pos: Int, visited: BooleanArray){
+    if(level == 5){
         levelChecker = true
         return
     }
 
-    if(!visited[pos]){
-        visited[pos] = true
-
-        for(j in nodes[pos]){
-            if(!visited[j]) dfs(nodes, cnt+1, j, visited)
+    visited[pos] = true
+    for(j in nodes[pos]){
+        if(!visited[j]) {
+            dfs(nodes, level + 1, j, visited)
         }
     }
+    visited[pos] = false
 }
 
 fun solution(n: Int, m: Int, nodes: ArrayList<ArrayList<Int>>){
