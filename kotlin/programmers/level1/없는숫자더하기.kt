@@ -11,10 +11,3 @@ class 없는숫자더하기 {
         return answer
     }
 }
-
-fun main(args: Array<String>){
-    val numbers = intArrayOf(5,8,4,0,6,7,9)
-    val c = 없는숫자더하기()
-
-    println(c.solution(numbers))
-}
