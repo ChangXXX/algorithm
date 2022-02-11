@@ -44,8 +44,3 @@ class 숫자문자열과영단어 {
         return answer
     }
 }
-
-fun main(args: Array<String>){
-    val c = 숫자문자열과영단어()
-    println(c.solution("23four5six7"))
-}
