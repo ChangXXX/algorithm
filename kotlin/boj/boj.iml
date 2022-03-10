@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/다익스트라" isTestSource="false" packagePrefix="boj" />
       <sourceFolder url="file://$MODULE_DIR$/투 포인터" isTestSource="false" packagePrefix="boj" />
       <sourceFolder url="file://$MODULE_DIR$/정렬" isTestSource="false" packagePrefix="boj"/>
+      <sourceFolder url="file://$MODULE_DIR$/DP" isTestSource="false" packagePrefix="boj"/>
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
