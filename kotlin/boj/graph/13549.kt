@@ -7,6 +7,8 @@ import java.io.OutputStreamWriter
 import java.lang.Integer.min
 import java.util.*
 
+// boj 13549 다익스트라
+
 fun solution(n: Int, k: Int):String{
     var answer = Int.MAX_VALUE
     val check =  BooleanArray(200001, {i -> false})

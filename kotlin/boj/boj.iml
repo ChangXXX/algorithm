@@ -3,7 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/dfsbfs" isTestSource="false" packagePrefix="boj" />
+      <sourceFolder url="file://$MODULE_DIR$/graph" isTestSource="false" packagePrefix="boj" />
       <sourceFolder url="file://$MODULE_DIR$/구현" isTestSource="false" packagePrefix="boj" />
       <sourceFolder url="file://$MODULE_DIR$/그리디" isTestSource="false" packagePrefix="boj" />
       <sourceFolder url="file://$MODULE_DIR$/다익스트라" isTestSource="false" packagePrefix="boj" />
