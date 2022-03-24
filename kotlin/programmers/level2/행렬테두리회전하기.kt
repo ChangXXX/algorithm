@@ -2,11 +2,9 @@ class 행렬테두리회전하기 {
     fun solution(rows: Int, columns: Int, queries: Array<IntArray>): IntArray {
         var answer = IntArray(queries.size)
         val arr = Array(rows) { IntArray(columns) }
-
-        var cnt = 1
         for (i in arr.indices) {
             for (j in arr[i].indices) {
-                arr[i][j] = cnt++
+                arr[i][j] = i * arr.size + j + 1
             }
         }
 
