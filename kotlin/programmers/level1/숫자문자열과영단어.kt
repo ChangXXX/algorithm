@@ -1,8 +1,10 @@
-import java.util.Stack
+/*
+ * 프로그래머스 숫자문자열과영단어 level1
+ */
 
 class 숫자문자열과영단어 {
     fun solution(s: String): Int {
-        var answer: Int = 0
+        var answer: String = ""
 
         val m : Map<String, Int> = mapOf(
             "zero" to 0,
@@ -17,30 +19,23 @@ class 숫자문자열과영단어 {
             "nine" to 9
         )
 
-        val st = Stack<Char>()
+        val sb = StringBuilder()
         for(i in s.indices){
-            st.push(s[i])
-        }
-
-        var stream = ""
-        var pos = 1
-        while(st.isNotEmpty()){
-            var top = st.peek()
-            st.pop()
-            if(top in 'a'..'z'){
-                stream = top + stream
-            }
-            if(top in '0'..'9' || m.containsKey(stream)){
-                if(top in '0'..'9'){
-                    answer += pos * (top - '0')
-                } else if(m.containsKey(stream)){
-                    answer += pos * m[stream]!!
-                    stream = ""
+            if(s[i] in 'a'..'z') {
+                sb.append(s[i])
+                if(m.containsKey(sb.toString())){
+                    answer += m[sb.toString()]
+                    sb.clear()
                 }
-                pos *= 10
             }
+            else answer += s[i]
         }
 
-        return answer
+        return answer.toInt()
     }
+}
+
+fun main(args: Array<String>){
+    val c = 숫자문자열과영단어()
+    println(c.solution("one4seveneight"))
 }
